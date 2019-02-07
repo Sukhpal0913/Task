@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <br>
+        <style>
+        h1 { text-align: center;}
+        </style>
+        
+        <h1>Dynamic Quiz on JavaScript</h1>
+        <style>
+                #ques1{
+                  display: block;
+                } 
+                </style>
+    </head>
+
+<br>
+<form id="form1">
+    <body>
+
+        <div class="parent">
+                <div id="ques1">
+        <h2>Question1:</h2> 
+        <p> What is JavaScript?</p>
+        
+        <div id="first">
+        <input type="radio" name="option" id="1" value="1" >Client side scripting language<br>
+        <input type="radio" name="option" id="2" value="2" >Object Oriented Programming<br>
+        <input type="radio" name="option" id="3" value="3" >Server side Programming language<br>
+        <input type="radio" name="option" id="4" value="4" >None of these<br>
+    </div>
+
+<a class= "link" href="">Next</a> 
+</div>
+<br>
+
+
+    
+<h2>Question 2:</h2> 
+        <p> Is JavaScript case sensitive?</p>
+        <div id="ques2">
+               
+        <input type="radio" name="option" id="5" value="1" >Yes<br>
+        <input type="radio" name="option" id="6" value="2" >No<br>
+        <br>
+        </div>
+        <!-- <input type="button" value="submit"> -->
+        <!-- <a id = "a" href="page3.html">Next</a>         -->
+
+<br>
+
+<a class= "link" href="">Next</a> 
+</div>
+<br>
+
+</div>
+
+
+<script src="quiz.js"></script>
+
+
+
+</body>
+</form>
+</html>
+
+<!-- <h2>Question 3:</h2> <br>
+        <p>Is JavaScript and Java are same?</p>
+        <input type="radio" name="option" value="option1" onclick="quiz3(1)">Yes<br>
+        <input type="radio" name="option" value="option2" onclick="quiz3(2)">No<br>
+        <br>
+         <input type="button" value="submit"> -->
+        <!-- <a href="page4.html name = ">Next</a>
+        <a href="page2.html">Back</a>
+
+
+        <h2>Question 4:</h2> <br>
+        <p>From which command we get value on console?</p>
+        <input type="radio" name="option" value="option1" onclick="quiz4(1)">document.getElementById().innerHTML<br>
+        <input type="radio" name="option" value="option2" onclick="quiz4(2)">console.log();<br>
+        <input type="radio" name="option" value="option3" onclick="quiz4(3)">document.console()<br>
+        <input type="radio" name="option" value="option4" onclick="quiz4(4)">document.write()<br>
+        <br>
+         <input type="button" value="submit"> 
+        <a href="page5.html">Next</a>
+        <a href="page3.html">Back</a>
+
+
+        <h2>Question 5:</h2> <br>
+        <p> How can you create an array in JavaScript?</p>
+        <input type="radio" name="option" value="option1" onclick="quiz5(1)">var arr = [2,5,6,7,3]<br>
+        <input type="radio" name="option" value="option2" onclick="quiz5(2)">var arr1: [a,e,i,o,u]<br>
+        <input type="radio" name="option" value="option3" onclick="quiz5(3)">var array = {a:5,b:6}<br>
+        <input type="radio" name="option" value="option4" onclick="quiz5(4)">None of these<br>
+        <br>
+         <input type="button" value="Next" 
+        <a href="page6.html">Next</a>
+        <a href="page4.html">Back</a>
+
+
+        <h2>Question 6:</h2> <br>
+        <p>What is anonymous function in JavaScript?</p>
+        
+        <input type="radio" name="option" value="option1" onclick="quiz6(1)">Function inside another function<br>
+        <input type="radio" name="option" value="option2" onclick="quiz6(2)">Function without a name<br>
+        <input type="radio" name="option" value="option3" onclick="quiz6(3)">Both of these<br>
+        <input type="radio" name="option" value="option4" onclick="quiz6(4)">None of these<br>
+        <br>
+         <input type="button" value="submit"> 
+        <a href="page7.html">Next</a>
+        <a href="page5.html">Back</a>
+
+
+        <h2>Question 7:</h2> <br>
+        <p>Which in built method sorts elements in an array?</p>
+        <input type="radio" name="option" value="option1" onclick="quiz7(1)">revese()<br>
+        <input type="radio" name="option" value="option2" onclick="quiz7(2)">push()<br>
+        <input type="radio" name="option" value="option3" onclick="quiz7(3)">sort()<br>
+        <input type="radio" name="option" value="option4" onclick="quiz7(4)">None of these<br>
+        <br>
+         <input type="button" value="submit"> 
+        <a href="page8.html">Next</a>
+        <a href="page6.html">Back</a>
+
+
+
+        <h2>Question 8:</h2> <br>
+        <p>Which typeof returns for a null value?</p>
+        <input type="radio" name="option" value="option1" onclick="quiz8(1)">undefined<br>
+        <input type="radio" name="option" value="option2" onclick="quiz8(2)">null<br>
+        <input type="radio" name="option" value="option3" onclick="quiz8(3)">object<br>
+        <input type="radio" name="option" value="option4" onclick="quiz8(4)">None of these<br>
+        <br>
+         <input type="button" value="submit"> 
+        <a href="page9.html">Next</a>
+        <a href="page7.html">Back</a>
+
+
+
+        <h2>Question 9:</h2> <br>
+        <p>How do you create a function in JavaScript</p>
+        <input type="radio" name="option" value="option1" onclick="quiz9(1)">function = myFunction()<br>
+        <input type="radio" name="option" value="option2" onclick="quiz9(2)">function myFunction<br>
+        <input type="radio" name="option" value="option3" onclick="quiz9(3)">function:myFunction<br>
+        <input type="radio" name="option" value="option4" onclick="quiz9(4)">None of these<br>
+        <br>
+         <input type="button" value="submit"> 
+        <a href="page10.html">Next</a>
+        <a href="page8.html">Back</a>
+
+
+        <h2>Question 10:</h2> <br>
+        <p> How to write If statement in JavaScript?</p>
+        <input type="radio" name="option" value="option1" onclick="quiz10(1)">if i == 3<br>
+        <input type="radio" name="option" value="option2" onclick="quiz10(2)">if i = 3<br>
+        <input type="radio" name="option" value="option3" onclick="quiz10(3)">if(i == 3)<br>
+        <input type="radio" name="option" value="option4" onclick="quiz10(4)">if i = 3 then<br>
+        <br>
+        <a href="page9.html">Back</a>
+        
+        <button type="submit" value="submit" onclick="result()">Submit</button> -->
+
+        
+
+      
+        <!-- <input type="button" value="submit">
+        
+
+
+
+
+<input type="radio" name="option" id="1" value="1" onclick="quiz(1)" >Client side scripting language<br>
+        <input type="radio" name="option" id="2" value="2" onclick="quiz(2)" >Object Oriented Programming<br>
+        <input type="radio" name="option" id="3" value="3" onclick="quiz(3)" >Server side Programming language<br>
+        <input type="radio" name="option" id="4" value="4" onclick="quiz(4)" >None of these<br>
+
