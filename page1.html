@@ -1,33 +1,122 @@
 <html>
-    <head>
+
+<head>
+
+        <link href="style.css" rel="stylesheet">
         <br>
-        <style>
-        h1 { text-align: center;}
-        </style>
         
+        <style>
+        h1 {text-align: center;} 
+        </style>
+
         <h1>Dynamic Quiz on JavaScript</h1>
-    </head>
+        
+
+        <script src="quiz.js"></script>
+</head>
+
+
+<body>
+
+<form id="quiz1" name="quiz">
+        
+    <h2>Question1:</h2> 
+        <p> What is JavaScript?</p>
+        
+        <input type="radio" name="question1"  value="1" >Client side scripting language<br>
+        <input type="radio" name="question1"  value="2" >Object Oriented Programming<br>
+        <input type="radio" name="question1"  value="3" >Server side Programming language<br>
+        <input type="radio" name="question1"  value="4" >None of these<br>
+        
+
+
+        <h2>Question 2:</h2> 
+        <p> Is JavaScript case sensitive?</p>
+               
+        <input type="radio" name="question2" id="1" value="5" >Yes<br>
+        <input type="radio" name="question2" id="1" value="6" >No<br>
+        
+
+        <h2>Question 3:</h2> 
+        <p>Is JavaScript and Java are same?</p>
+        <input type="radio" name="question3" value="7" >Yes<br>
+        <input type="radio" name="question3" value="8" >No<br>
+         
+
+
+        <h2>Question 4:</h2> 
+        <p>From which command we get value on console?</p>
+        <input type="radio" name="question4" value="9" >document.getElementById().innerHTML<br>
+        <input type="radio" name="question4" value="10" >console.log();<br>
+        <input type="radio" name="question4" value="11" >document.console()<br>
+        <input type="radio" name="question4" value="12" >document.write()<br>
+        
+
+        <h2>Question 5:</h2> 
+        <p> How can you create an array in JavaScript?</p>
+        <input type="radio" name="question5" value="13" >var arr = [2,5,6,7,3]<br>
+        <input type="radio" name="question5" value="14" >var arr1: [a,e,i,o,u]<br>
+        <input type="radio" name="question5" value="15" >var array = {a:5,b:6}<br>
+        <input type="radio" name="question5" value="16" >None of these<br>
+        
+
+        <h2>Question 6:</h2> 
+        <p>What is anonymous function in JavaScript?</p>
+        
+        <input type="radio" name="question6" value="17" >Function inside another function<br>
+        <input type="radio" name="question6" value="18" >Function without a name<br>
+        <input type="radio" name="question6" value="19" >Both of these<br>
+        <input type="radio" name="question6" value="20" >None of these<br>
+        
+
+        <h2>Question 7:</h2> 
+        <p>Which in built method sorts elements in an array?</p>
+        <input type="radio" name="question7" value="21" >revese()<br>
+        <input type="radio" name="question7" value="22" >push()<br>
+        <input type="radio" name="question7" value="23" >sort()<br>
+        <input type="radio" name="question7" value="24" >None of these<br>
+        
+
+
+        <h2>Question 8:</h2> 
+        <p>Which typeof returns for a null value?</p>
+        <input type="radio" name="question8" value="25" >undefined<br>
+        <input type="radio" name="question8" value="26" >null<br>
+        <input type="radio" name="question8" value="27" >object<br>
+        <input type="radio" name="question8" value="28" >None of these<br>
+        
+
+
+        <h2>Question 9:</h2> 
+        <p>How do you create a function in JavaScript</p>
+        <input type="radio" name="question9" value="29" >function = myFunction()<br>
+        <input type="radio" name="question9" value="30" >function myFunction<br>
+        <input type="radio" name="question9" value="31" >function:myFunction<br>
+        <input type="radio" name="question9" value="32" >None of these<br>
+        
+
+        <h2>Question 10:</h2> 
+        <p> How to write If statement in JavaScript?</p>
+        <input type="radio" name="question10" value="33" >if i == 3<br>
+        <input type="radio" name="question10" value="34" >if i = 3<br>
+        <input type="radio" name="question10" value="35" >if(i == 3)<br>
+        <input type="radio" name="question10" value="36" >if i = 3 then<br>
+        
+
+
 
 <br>
-<form id="form1">
-    <body>
 
-        <h2>Question 1:</h2> <br>
-        <p> What is JavaScript?</p>
-        <input type="radio" name="option" value="option1" onclick="quiz(1)" >Client side scripting language<br>
-        <input type="radio" name="option" value="option2" onclick="quiz(2)" >Object Oriented Programming<br>
-        <input type="radio" name="option" value="option3" onclick="quiz(3)" >Server side Programming language<br>
-        <input type="radio" name="option" value="option4" onclick="quiz(4)" >None of these<br>
-        <br>
-        <!-- <input type="button" value="Next" -->
-        <a href="page2.html">Next</a>
-
-        <script src="quiz.js">
-            
-        </script>
+        <input id="button" type="button" value="Submit" onclick="check();">
 
 
+     </form>
 
-    </body>
-</form>
+     <div id="after_submit">
+         <p id="number_correct"></p>
+     </div>
+
+</body>
+
+
 </html>

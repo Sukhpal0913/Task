@@ -1,267 +1,62 @@
+function check() {
+    // alert("You are the winner of this game..");
 
-let data = {
-    count:0,
-    check: false,
-    s: '2'
-}   
-   
-
-// window.localStorage.setItem("count", 0);
-
-// //In another page:
-// function count(){
-//     localStorage.setItem("count", parseInt(window.localStorage.getItem("count")) );
-//     var c  = parseInt(window.localStorage.getItem("count")) + 1;
-//     console.log("-----"+ c);
-//     localStorage.setItem("count", parseInt(window.localStorage.getItem("count")) + 1);
-// }
+    var question1 = document.quiz.question1.value;
+    var question2 = document.quiz.question2.value;
+    var question3 = document.quiz.question3.value;
+    var question4 = document.quiz.question4.value;
+    var question5 = document.quiz.question5.value;
+    var question6 = document.quiz.question6.value;
+    var question7 = document.quiz.question7.value;
+    var question8 = document.quiz.question8.value;
+    var question9 = document.quiz.question9.value;
+    var question10 = document.quiz.question10.value;
 
 
-// //localStorage.setItem("count", 0);
-// var questions = [
-//     {
-//         ques1: "What is JavaScript?",
-
-//     }
-// ]
-
- 
-
-// var u = document.getElementById("a").href;
-// var ind = u.indexOf('.');
-// data.s = u.charAt(ind - 1);
-
- function listener1(){
-
-     document.querySelector('.parent').addEventListener('change', event=>{
-
-         console.log(event.target);
-        data.id =event.target.getAttribute('id');
-        data.value = document.getElementById(`${data.id}`).value;
-        console.log(data.value);
-       
-
-        quiz();
-       
-        
-    });
-  }
-
-  function listener2(){
-
-    document.querySelector('.parent').addEventListener('click', event=>{
-event.preventDefault();
-        console.log(event.target.parentNode);
-       let cla = event.target.parentNode.getAttribute('id');
-       console.log(cla);
-       console.log(typeof(cla));
-       let linkclass =event.target.getAttribute('class');
-       if(linkclass === 'link'){
-        document.getElementById(cla).style.display = 'none';
-       }
-       
-        
-    //    data.id =event.target.getAttribute('id');
-    //    data.value = document.getElementById(`${data.id}`).value;
-    //    console.log(data.value);
-      
-
-      
-      
-       
-       
-   });
-
- }
+    var correct = 0;
 
 
-listener1();
-listener2();
-
-
-
-function quiz() {
-
-    console.log("inside method"+ data.value);
-
-    
-    if( data.value==1) {
-        console.log("Correct ans");
-        data.count++;
-        data.count++;
-        
-        //answer1.push(1);
-        //count++;
-        console.log(data.count);
-    } else {
-       // data.count++;
-        //console.log(data.count);data.count++;
-        
-        //answer1.push(1);
-        //count++; 
-        data.count++;
-        console.log(data.count);
-
-        console.log('wrong ans');
-      
+    if (question1 == "1") {
+        correct++;
     }
-}
 
-function quiz2() {
-    
-    if(data.value == 1) {
-        console.log(parseInt(localStorage.getItem("count")));
-        console.log("Correct ans");
-        count();
-        //answer1.push(1);
-     //   count++;
-       // console.log(count);
-    } else {
-        console.log('wrong ans');
+    if (question2 == "5") {
+        correct++;
     }
-}
 
-function quiz3(ans) {
-    if(ans == 2) {
-        console.log("Correct ans");
-        //answer1.push(1);
-        data.count++;
-        console.log(data.count);
-    } else {
-        console.log('wrong ans');
+    if (question3 == "8") {
+        correct++;
     }
-}
 
-function quiz4(ans) {
-    if(ans == 2) {
-        console.log("Correct ans");
-        //answer1.push(1);
-        data.count++;
-        console.log(data.count);
-    } else {
-        console.log('wrong ans');
+    if (question4 == "10") {
+        correct++;
     }
-}
 
-function quiz5(ans) {
-    if(ans == 1) {
-        console.log("Correct ans");
-        //answer1.push(1);
-        data.count++;
-        console.log(data.count);
-    } else {
-        console.log('wrong ans');
+    if (question5 == "13") {
+        correct++;
     }
-}
 
-function quiz6(ans) {
-    if(ans == 2) {
-        console.log("Correct ans");
-       //answer1.push(1);
-       data.count++;
-       console.log(data.count);
-    } else {
-        console.log('wrong ans');
+    if (question6 == "18") {
+        correct++;
     }
-}
 
-function quiz7(ans) {
-    if(ans == 3) {
-        console.log("Correct ans");
-      //answer1.push(1);
-      
-      data.count++;
-      console.log(data.count);
-    } else {
-        console.log('wrong ans');
+    if (question7 == "23") {
+        correct++;
     }
-}
 
-
-
-function quiz8(ans) {
-    if(ans == 3) {
-        
-        console.log("Correct ans");
-        //answer1.push(1);
-        data.count++;
-        console.log(data.count);
-    } else {
-        console.log('wrong ans');
+    if (question8 == "27") {
+        correct++;
     }
-}
 
-function quiz9(ans) {
-    if(ans == 2) {
-        console.log("Correct ans");
-        //answer1.push(1);
-        data.count++;
-        console.log(data.count);
-    } else {
-        console.log('wrong ans');
+    if (question9 == "30") {
+        correct++;
     }
-}
 
-function quiz10(ans) {
-    if(ans == 3) {
-        console.log("Correct ans");
-      //answer1.push(1);
-      data.count++;
-      console.log(data.count);
-    } else {
-        console.log('wrong ans');
+    if (question10 == "35") {
+        correct++;
     }
+
+
+    document.getElementById("after_submit").style.visibility = "visible";
+    alert(document.getElementById("number_correct").innerHTML = "You got " + correct + " answers correct.");
 }
-// list();
-/*
-function result() {
-    console.log("this is it");
-    console.log("Total correct answers are: " + data.count);
-}result();
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// /*var answer = ['c','y','n','co','v','s','o','f','i'];
-// var count=0;
-// function quiz(id){
-//     var correct=false;
-//     answer.forEach(el=>{ 
-//         if(el==id){
-//         correct=true
-//         }
-//     });
-//     console.log(id);
-// if(correct)
-// {
-//     count++;
-//     alert(count);
-// }else{
-//     alert("wrong answer");
-// }
